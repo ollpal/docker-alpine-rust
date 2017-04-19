@@ -16,7 +16,9 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 # install rust
 
 ENV HOME=/home/user
+
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+
 ENV PATH=$HOME/.cargo/bin:$PATH
 
 #
